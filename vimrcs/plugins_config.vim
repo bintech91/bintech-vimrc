@@ -65,7 +65,6 @@ Plug 'pangloss/vim-javascript'
 Plug 'Vimjas/vim-python-pep8-indent'
 call plug#end()
 
-
 """"""""""""""""""""""""""""""
 " => bufExplorer plugin
 """"""""""""""""""""""""""""""

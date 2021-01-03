@@ -1,0 +1,1 @@
+coc-java coc-pyright coc-html coc-css coc-json coc-tsserver
