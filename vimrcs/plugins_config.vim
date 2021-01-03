@@ -63,6 +63,8 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'leafgarland/typescript-vim'
 Plug 'pangloss/vim-javascript'
 Plug 'Vimjas/vim-python-pep8-indent'
+Plug 'google/vim-maktaba'
+Plug 'google/vim-codefmt'
 call plug#end()
 
 """"""""""""""""""""""""""""""
