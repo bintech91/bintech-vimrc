@@ -18,7 +18,7 @@ call pathogen#helptags()
 " => vim-plug (plugins manager)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin('~/.vim_runtime/sources_non_forked')
-Plug 'ycm-core/YouCompleteMe', {'as': 'youcompleteme', 'do':'python3 install.py --all'}
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdtree'
 Plug 'puremourning/vimspector'
