@@ -3,7 +3,7 @@ set -e
 
 echo "Start install bintech vimrc"
 
-echo "Backup ~/.vim_runtime"
+echo "Backup ~/.vim_runtime to ~/vim_runtime_bk"
 
 cp -Rf ~/.vim_runtime ~/vim_runtime_bk
 
@@ -13,6 +13,23 @@ mkdir -p ~/.vim_runtime
 cp -Rf . ~/.vim_runtime
 
 cd ~/.vim_runtime
+
+if [ -z "$JAVA_HOME" ]; then
+    if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+        echo "WARNING: JAVA_HOME is empty. Setup default JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64 in .profile to use java plugins"
+        echo "export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64" >> ~/.profile
+        source ~/.profile
+    elif [[ "$OSTYPE" == "darwin"* ]]; then
+        # Mac OSX
+        echo "WARNING: JAVA_HOME is empty. Setup default JAVA_HOME=`/usr/libexec/java_home` in .bash_profile to use java plugins"
+        echo "export JAVA_HOME=`/usr/libexec/java_home`" >> ~/.bash_profile
+        source ~/.bash_profile
+    else
+        # Unknown
+        echo "WARNING: JAVA_HOME is empty. Please setup your JAVA_HOME to use java plugins"
+
+    fi
+fi
 
 echo 'set runtimepath+=~/.vim_runtime
 

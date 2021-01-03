@@ -1,2 +1,3 @@
-# https://github.com/neoclide/coc.nvim/wiki/Language-servers
+# https://github.com/neoclide/coc.nvim/wiki/Language-server
 coc-java coc-pyright coc-html coc-css coc-json coc-tsserver
+

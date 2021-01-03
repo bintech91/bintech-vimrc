@@ -1,0 +1,3 @@
+{
+    "java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication -javaagent:$HOME/.vim_runtime/softwares/lombok.jar -Xbootclasspath/a:$HOME/.vim_runtime/softwares/lombok.jar" 
+}
