@@ -19,6 +19,10 @@ Get the list of coc extensions from https://github.com/bintech91/bintech-vimrc/c
 
     :CocInstall <coc-extensions-list>
 
+Because old jdk version cannot support jdt lsp server new version, we execute another script to install:
+    
+    sh post_install.sh
+
 ## Fonts
 
 I recommend using [IBM Plex Mono font](https://github.com/IBM/plex) (it's an open-source and awesome font that can make your code beautiful). The Awesome vimrc is already setup to try to use it.
