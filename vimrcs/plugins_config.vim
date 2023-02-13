@@ -38,7 +38,6 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'groenewege/vim-less'
 Plug 'therubymug/vim-pyte'
-Plug 'garbas/vim-snipmate'
 Plug 'honza/vim-snippets'
 Plug 'tpope/vim-surround'
 Plug 'terryma/vim-expand-region'
@@ -118,12 +117,6 @@ let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git\|^\.coffee'
 " Enable all functions in all modes
 let g:user_zen_mode='a'
 
-
-""""""""""""""""""""""""""""""
-" => snipMate (beside <TAB> support <CTRL-j>)
-""""""""""""""""""""""""""""""
-ino <C-j> <C-r>=snipMate#TriggerSnippet()<cr>
-snor <C-j> <esc>i<right><C-r>=snipMate#TriggerSnippet()<cr>
 
 
 """"""""""""""""""""""""""""""
