@@ -64,6 +64,10 @@ Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'google/vim-maktaba'
 Plug 'google/vim-codefmt'
 Plug 'iberianpig/tig-explorer.vim'
+" post install (yarn install | npm install) then load plugin only for editing supported files
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install --frozen-lockfile --production',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
 call plug#end()
 
 """"""""""""""""""""""""""""""
